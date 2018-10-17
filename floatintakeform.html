@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Best Day Fitness and Floats" />
+    <meta name="keywords" content="best day fitness, best day floats, personal training, physical therapy, injury rehab" />
+    <meta name="author" content="Concept 11" />
+    <title>Best Day | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/floatintakeform.css" rel="stylesheet" type="text/css" />
+    <script src="JS/floatintakeform.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top" role="navigation">
+            <img src="Images/BestDayLogoWhite.png" class="navbar-brand" height="auto" width="150px" />
+            <div class="collapse navbar-collapse" id="collapseTarget">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="personaltraining.html">PERSONAL TRAINING</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link active" href="#">FLOAT THERAPY</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapseTarget">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <br />
+            <div class="container">
+                <h1 class="text-center">FLOAT INTAKE FORM</h1>
+                <p class="text-center">Below is the first time float intake form. Submitting this form is required for an appointment appointment. We recommend to finish this form before you come in to float, as it will make the process faster.</p>
+            </div>
+            <br />
+            <div class="container">
+                <form method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputFirstName1">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName1" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName1">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName1" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputBirthday">Birthday</label>
+                            <input type="text" class="form-control" id="datepicker1" required>
+                            <script>
+                                $('#datepicker1').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">E-Mail</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="example@address.com" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputLastName">Mobile Number</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="(727) 777-7777" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Select...</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmergencyContactName">Emergency Contact Name</label>
+                            <input type="text" class="form-control" id="inputEmergencyContactName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmergencyContactPhoneNumber">Emergency Contact Mobile Number</label>
+                            <input type="text" class="form-control" id="inputEmergencyContactMobileNumber" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAccessibilityYes">Are you able to safely get in and out of the Dream Pod Float Tank?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inputAccessibility" id="inputAccessibilityYes" value="option1" required>
+                            <label class="form-check-label" for="inputAccessibilityYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inputAccessibility" id="inputAccessibilityNo" value="option2">
+                            <label class="form-check-label" for="inputAccessibilityNo">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>**Our staff is not trained in assisted transfers. If you need assistance, you must bring your own helper.**</p>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="inputMedicalConditions">Medical Conditions</label>
+                            <input type="text" class="form-control" id="inputMedicalConditions" placeholder="Please list any medical conditions that may be of concern to your safe enjoyment of our facility.">
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <div class="title">PLEASE CHECK THESE BEFORE FLOATING. I, THE WILLING CUSTOMER, WILL NOT USE THE DREAMPOD IF : </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck1" required>
+                                <label class="form-check-label" for="policyCheck1">
+                                    I have not showered thoroughly and still have oils, creams, or makeup on my body.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck2" required>
+                                <label class="form-check-label" for="policyCheck2">
+                                    I have had any type of hair color/treatment within the past 7 days.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck3" required>
+                                <label class="form-check-label" for="policyCheck3">
+                                    I am under the influence of alcohol or drugs.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck4" required>
+                                <label class="form-check-label" for="policyCheck4">
+                                    I have a communicable or infectious skin condition, disorder or diseases.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck5" required>
+                                <label class="form-check-label" for="policyCheck5">
+                                    I have open sores.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck6" required>
+                                <label class="form-check-label" for="policyCheck6">
+                                    I am diabetic, unless my diabetes is under medical control.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck7" required>
+                                <label class="form-check-label" for="policyCheck7">
+                                    I have a history of heart trouble, epilepsy, seizures or blackouts and have not received my doctor's permission to use a floatation tank.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck8" required>
+                                <label class="form-check-label" for="policyCheck8">
+                                    I am experiencing a heavy menstrual period. Please reschedule if there is a chance any menstrual blood could come out in the water.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck9" required>
+                                <label class="form-check-label" for="policyCheck9">
+                                    I have a condition which may be adversely affected by cutaneous absorption of magnesium.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck10" required>
+                                <label class="form-check-label" for="policyCheck10">
+                                    I have kidney disease.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="policyCheck11" required>
+                                <label class="form-check-label" for="policyCheck11">
+                                    I may release bodily fluids, voluntarily or involuntarily, into the Dream Pod.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <div class="title">Best Day Floats Liability Waiver and Professional Agreement</div>
+                        <p>
+                            We want you to have an enjoyable and safe experience with us at Best Day Floats. We ask that you be aware of and agree to the following information and policies.
+                        </p>
+                        <div class="title">Fees</div>
+                        <p>
+                            Fees vary based on the desired service package. These fees are subject to change. We require payment for services before the time of service.
+                        </p>
+                        <div class="title">Cancellation Policy</div>
+                        <p>
+                            If a cancellation is necessary we require at least 24 hours notice before your scheduled appointment. Failure to give this notice will result in 100% of the normal session fee being charged to your credit card.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <div class="title">Clean-up Fee</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck12" required>
+                            <label class="form-check-label" for="policyCheck12">
+                                I understand that violation of any of these rules that results in contamination of the Dream Pod Float Tank water may result in a cleaning and salt replacement fee of up to $1000.
+                            </label>
+                        </div>
+                        <div class="title">Late Cancellation Policy</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck13" required>
+                            <label class="form-check-label" for="policyCheck13">
+                                If a cancellation is necessary we require at least 24 hours notice before your scheduled appointment. Failure to give this notice will result in 100% of the normal session fee being charged to your credit card.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="title">Timing Policy | 1 hour float sessions allow for 15 minutes pre and post shower. Sessions are booked for 1.5 hour increments.</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck14" required>
+                            <label class="form-check-label" for="policyCheck14">
+                                I understand that I have 15 minutes to pre shower and 15 minutes to post shower/get ready.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="title">Sound Policy | The float room is built with optimal insulation for sound proofing. We live in urban environment and often times Best Day cannot control exterior sounds. Best Day is also a fitness studio. Our staff is aware when floats are in session and will limit(as much as possible) the noise levels in the studio. We cannot guarantee a completely silent environment while in the float tank however. Air conditioning units adjacent to the float room may turn on and off during your float as well. This is necessary for optimal temperature controls in the float room and studio. </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck15" required>
+                            <label class="form-check-label" for="policyCheck15">
+                                I understand that if I choose not to wear earplugs or opt out of float tank soundtrack, that I may hear some noises periodically. If complete sensory deprivation is your goal, please chat us about scheduling during a slower time of day where sounds can be better reduced.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="title">Float Tank Servicing Cancellation Policy</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck16" required>
+                            <label class="form-check-label" for="policyCheck16">
+                                The Dream Pod Float Tank is a machine and however unlikely, occasional troubleshooting may cause cancellation of the session. I understand that Best Day Floats will notify me as soon as possible and resheduling options will be offered.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="title">Refund Policy</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="policyCheck17" required>
+                            <label class="form-check-label" for="policyCheck17">
+                                All sales are final. Refunds issued with doctors note explaining that client is not recommended to float due to health concerns.
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <p>
+                            I am choosing to use the Dream Pod Floatation Therapy Tank of my own free will and will not hold the owner/operator of Best Day LLC liable for any injury during a session or while on the premises. Best Day LLC reserves the right to refuse service to anyone.
+                            <br />
+                            I have read, understand and agree to all of the terms and policies listed above. This signed document represents an agreement between myself ( the customer) and Best Day LLC. By signing my name electronically below, I agree to these terms.
+                        </p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputFirstName2">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName2" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputLastName2">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName2" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputDate">Date</label>
+                            <input type="text" class="form-control" id="datepicker2" required>
+                            <script>
+                                $('#datepicker2').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="inputFindOut" placeholder="How did you find out about us? Receive 50% off your next float for referrals.">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" value="submit">Submit</button>
+                </form>
+                <br />
+            </div>
+        </div>
+    </section>
+
+    <section class="foot">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark" role="navigation">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item text-center">
+                    <a class="nav-link text-nowrap" href="contact.html">6619 1st Avenue South, St. Petersburg, FL, 33707</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link text-nowrap" href="tel:+1-727-623-9996">(727) 623-9996</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link text-nowrap" href="mailto:bestdayfitnessandfloats@gmail.com">bestdayfitnessandfloats@gmail.com</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+
+</html>
