@@ -24,6 +24,11 @@ p {
     font-size: 150%;
 }
 
+.main .navbar-nav > li {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
 .foot nav {
     font-size: 75%;
 }
